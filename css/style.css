@@ -1,0 +1,186 @@
+/* =========================
+   HEALTHIFY STYLE SHEET
+   ========================= */
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    border-bottom: 2px solid white;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #FAF9F6;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 50px;
+}
+
+/* IMAGES */
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* MEAL CARDS */
+.meal-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meal-card {
+    background-color: #FAF9F6;
+    border: 1px solid #E5E5E5;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.meal-card img {
+    max-width: 100%;
+}
+
+/* WORKOUT CARDS */
+.workout-card {
+    background-color: #FAF9F6;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* TIPS CARDS */
+.tip-card {
+    width: 300px;
+    background-color: #FAF9F6;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* MINDSET QUOTE */
+.quote {
+    background-color: #000000;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+/* BUTTONS */
+button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+/* FOOTER */
+footer {
+    background-color: #FAF9F6;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #E5E5E5;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .meal-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
